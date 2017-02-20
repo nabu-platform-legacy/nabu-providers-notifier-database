@@ -1,0 +1,9 @@
+<structure interface="be.nabu.eai.repository.api.NotificationProvider.notify" name="pipeline">
+    <structure name="input">
+        <structure definition="nabu.providers.notifier.database.configuration" name="configuration"/>
+    </structure>
+    <structure name="output"/>
+    <structure collectionName="Notifications" definition="nabu.providers.notifier.database.types.model.notifier.Notification" name="notification" namespace="nabu.management.notifier.types.model.notifier"/>
+    <structure collectionName="NotificationProperties" definition="nabu.providers.notifier.database.types.model.notifier.NotificationProperty" name="property" namespace="nabu.management.notifier.types.model.notifier"/>
+    <structure collectionName="NotificationProperties" definition="nabu.providers.notifier.database.types.model.notifier.NotificationProperty" maxOccurs="unbounded" minOccurs="0" name="properties" namespace="nabu.management.notifier.types.model.notifier"/>
+</structure>

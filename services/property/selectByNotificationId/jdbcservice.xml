@@ -1,0 +1,12 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<outputDefinition>nabu.providers.notifier.database.types.model.notifier.NotificationProperty</outputDefinition>
+	<sql>select
+	id,
+	created,
+	modified,
+	key,
+	value,
+	notification_id
+from notification_properties
+where notification_id = :notificationId</sql>
+</jdbcService>

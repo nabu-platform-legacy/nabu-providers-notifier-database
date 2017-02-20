@@ -1,0 +1,23 @@
+<jdbcService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<inputDefinition>nabu.providers.notifier.database.types.model.notifier.Notification</inputDefinition>
+	<sql>insert into notifications (
+	created,
+	modified,
+	severity,
+	message,
+	description,
+	context,
+	type,
+	code
+) values (
+	:created,
+	:modified,
+	:severity,
+	:message,
+	:description,
+	:context,
+	:type,
+	:code
+)</sql>
+	<generatedColumn>id</generatedColumn>
+</jdbcService>
