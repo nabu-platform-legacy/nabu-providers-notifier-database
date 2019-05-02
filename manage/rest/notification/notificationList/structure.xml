@@ -1,0 +1,4 @@
+<structure name="notificationList">
+    <structure collectionName="Notifications" definition="nabu.providers.notifier.database.types.model.notifier.Notification" maxOccurs="unbounded" minOccurs="0" name="notifications" namespace="nabu.providers.notifier.database.types.model.notifier"/>
+    <structure definition="nabu.services.jdbc.types.Page" minOccurs="0" name="page"/>
+</structure>

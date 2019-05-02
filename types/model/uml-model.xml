@@ -6,5 +6,6 @@
     <generateFlatDocuments>true</generateFlatDocuments>
     <inverseParentChildRelationship>false</inverseParentChildRelationship>
     <modifiedField>modified</modifiedField>
-    <useLongs>true</useLongs>
+    <useExtensions>false</useExtensions>
+    <useLongs>false</useLongs>
 </umlModel>

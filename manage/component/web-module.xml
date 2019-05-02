@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<webModule>
+    <webFragments>nabu.providers.notifier.database.manage.rest.notification.property.list</webFragments>
+    <webFragments>nabu.providers.notifier.database.manage.rest.notification.list</webFragments>
+</webModule>

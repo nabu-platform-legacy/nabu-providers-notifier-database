@@ -1,0 +1,46 @@
+<sequence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		disabled="false"
+		id="e46f76b6-7857-4ae3-9a43-dc3bf3a45f2a">
+	<steps xsi:type="be.nabu.libs.services.vm.step.Map"
+			disabled="false"
+			id="5a9d2dbb-907e-4580-85a1-fb19e3afcc19">
+		<steps xsi:type="be.nabu.libs.services.vm.step.Invoke"
+				disabled="false"
+				id="dbdf6ff7-f943-49d2-84ec-50d2a92eb109"
+				serviceId="nabu.providers.notifier.database.services.property.selectByNotificationId"
+				resultName="resultadec2cbbaf8b47f7846483b4effd6d0d"
+				temporaryMapping="true"
+				x="68"
+				y="63"
+				invocationOrder="0"
+				asynchronous="false">
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="5903cf38-92da-4cbd-b3ac-d52ca70bac69"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/path/notificationId</from>
+				<to>parameters/notificationId</to>
+			</steps>
+			<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+					disabled="false"
+					id="dd5d2783-ac6a-4a29-8a45-d5d4a1938b3c"
+					mask="false"
+					optional="false"
+					fixedValue="false">
+				<from>input/query/orderBy</from>
+				<to>orderBy</to>
+			</steps>
+		</steps>
+		<steps xsi:type="be.nabu.libs.services.vm.step.Link"
+				disabled="false"
+				id="8b92a67b-b2f2-44c4-b75d-914206289985"
+				mask="false"
+				optional="false"
+				fixedValue="false">
+			<from>resultadec2cbbaf8b47f7846483b4effd6d0d/results</from>
+			<to>output/content/properties</to>
+		</steps>
+	</steps>
+</sequence>
